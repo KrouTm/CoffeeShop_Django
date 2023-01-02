@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block coffee_background %}
+    <div class="img-top" data-aos="fade" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"></div>
+
+    <div class="p-phrase-link">
+        <p class="phrase-first" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">First<br>I drink the coffee<br>then<br>I do the things</p>
+        <div class="p-2link">
+            <a href="menu">The menu</a>
+            <i class="fa-solid fa-diamond diamond"></i>
+            <a href="#">Our grain selection</a>                
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block imgs %}
+    <div class="card-all">
+        <div class="card-info" data-aos="fade-right" data-aos-offset="250" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+            <div class="img-coffee all-coffee"></div>
+            <div class="text-card">
+                <h1>Fresh & selected beans</h1>
+                <p>The beans are hand-selected to create a perfect blend for your coffee.</p>
+            </div>
+        </div>
+        <div class="card-info" data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+            <div class="img-coffee1 all-coffee"></div>
+            <div class="text-card">
+                <h1>Coffee made with love</h1>
+                <p>Friendship is similar to good coffee; once cold, it doesn't heat up without losing a lot of the first taste.</p>
+            </div>
+        </div>
+        <div class="card-info" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+            <div class="img-coffee2 all-coffee"></div>
+            <div class="text-card">
+                <h1>The perfect day has coffee</h1>
+                <p>There's nothing like waking up early on a Sunday, having a coffee and just watching the day dawning from the window, gradually coming to life...</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block about %}
+    <div style="height: 100%;">
+        <div class="main" id="about">
+            <div class="img-who">
+                <div class="card center">
+                    <div class="v">
+                        <div class="heading">How we make a cup of Coffe?</div>
+                        <p class="text">True love these days can be found in many creative places – online, in a bar, or old-fashioned, on a blind date. But for a true coffee lover, the relationship they want and need is found every morning (noon and night sometimes!) at the bottom of their favorite mug. Black, cream, sugar, foam, no foam, these preferences can easily divide nations, it seems, because people LOVE their coffee in a way and often don't move to change it. Growing up in Seattle, where Starbucks is the mothership, and artisanal coffees are found on every corner, I grew up thinking that coffee and coffee culture was a normal way of life. But for many people, coffee is just what gets you moving in the morning. You fill your thermos or travel mug with whatever you've ground up or in a capsule and you're ready for the day.</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block meta %}
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% endblock %}
+
+        {% block corecss %}
+            <link rel="stylesheet" href="{% static 'css/base.css' %}">
+            <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        {% endblock %}
+
+        {% block import_css %}
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            </style>
+        {% endblock %}
+
+        {% block js %}
+            <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        {% endblock %}
+        
+        <title>Spa {% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        {% block navbar %}
+            <header id="header">
+                <!--Logo-->
+                <a href="index"><div class="logo"></div></a>
+                <!--Navbar-->
+                <nav id="nav">
+                    <button aria-label="Open menu" aria-controls="menu" aria-haspopup="true" aria-expanded="false" id="mobile"><span id="hamburger"></span></button>
+                    <div id="menu" role="menu" class="navbar">
+                        <a href="index">Home</a>
+                        <button class="dropdown">More <i class="fa fa-caret-down"></i>
+                            <ul class="dropdown-content">
+                                <a href="contact">Contact</a></li>
+                                <a href="contact">Subscribe</a></li>
+                                <a href="menu">Menu</a></li>
+                            </ul>
+                        </button>
+                        <a href="reservation">Booking</a>
+                        <a href="#about">About</a>
+                        <div class="drop">
+                            <a href="contact">Contact</a>
+                            <a href="contact">Subscribe</a>
+                            <a href="menu">Menu</a>
+                            
+                        </div>               
+                    </div>
+                </nav>
+            </header>
+        {% endblock %}
+
+        {% block footer %}
+            <div class="Footer">
+                <div class="p-info">Information
+                    <a href="#">About us</a>
+                    <a href="#">Subscribe</a>
+                    <a href="#">Members</a>
+                    <a href="#">Services</a>
+                </div>
+            
+                <div class="p-info">Helpful Links
+                    <a href="#">Services</a>
+                    <a href="#">Help</a>
+                    <a href="#">Terms & Condition</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            
+                <div class="p-info">Partnership
+                    <a href="#">Websites</a>
+                    <a href="#">Social Media</a>
+                    <a href="#">Branding</a>
+                </div>
+            
+                <div class="p-info-font">
+                    <a href="#"><i class="fas fa-envelope"></i> CoffeShop@mysite.com</a>
+                    <a href="#"><i class="fas fa-phone-volume"></i>Tel: (353) 0011-2233</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Address: Somewhere - Dublin - Ireland</a>
+                </div>
+            </div>
+        {% endblock %}
+
+    </body>
+</html>
