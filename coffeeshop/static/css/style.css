@@ -176,81 +176,15 @@ html{scroll-behavior: smooth;}
   .send{position: relative; font-family: 'Bebas Neue', cursive; color: chocolate; font-size: 1.5rem; display: flex; justify-content: center; padding: 2rem; text-align: center;}
 
   /*Booking*/
-  .booking{position: relative; display: flex; justify-content: space-around; width: 100%; margin-bottom: 3rem;}
+  .booking{position: relative; display: flex; text-align: center; margin: auto; width: 100%; justify-content: center; margin-bottom: 3rem;}
+  .p-allinfo{display: table; margin: auto;}
+  .information{background-color: rgba(206, 189, 179, 0.3); border-radius: 10px; padding: 0.1rem 0.5rem; margin: 0.5rem; border: solid 2px rgb(206, 189, 179); cursor: text;}
+  .submit{background-color: chocolate; border-radius: 10px; padding: 0.5rem 1rem; margin: 0.5rem; cursor: pointer; font-weight: bolder;}
 
-    /*Calendar*/
-    .calendar {height: max-content; width: max-content; z-index: 50; margin: auto; background-color: rgba(206, 189, 179, 0.3); border: solid 2px rgb(206, 189, 179); border-radius: 10px; padding: 1.5rem; overflow: hidden;}
-    .calendar-header {display: flex; justify-content: space-between; align-items: center; padding: 0.5rem;}
-
-    /*Week day*/
-    .calendar-week-day {height: 2rem; display: grid; grid-template-columns: repeat(7, 1fr);}
-    .calendar-week-day div {display: grid; place-items: center;}
-
-    /*Days*/
-    .calendar-days {display: grid; grid-template-columns: repeat(7, 1fr); gap: 1rem;}
-    .calendar-days div {width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center; padding: 0.5rem; position: relative; cursor: pointer; animation: to-top 1s forwards;}
-    .calendar-days div span {position: absolute;}
-    .calendar-days div:hover span {transition: width .2s ease-in-out, height .2s ease-in-out;}
-    .calendar-days div span:nth-child(1),
-    .calendar-days div span:nth-child(3) {width: 2px; height: 0; background-color: rgba(206, 189, 179, 0.5);}
-    .calendar-days div:hover span:nth-child(1),
-    .calendar-days div:hover span:nth-child(3) {height: 100%;}
-    .calendar-days div span:nth-child(1) {bottom: 0; left: 0;}
-    .calendar-days div span:nth-child(3) {top: 0; right: 0;}
-    .calendar-days div span:nth-child(2),
-    .calendar-days div span:nth-child(4) {width: 0; height: 2px; background-color: rgba(206, 189, 179, 0.5);}
-    .calendar-days div:hover span:nth-child(2),
-    .calendar-days div:hover span:nth-child(4) {width: 100%;}
-    .calendar-days div span:nth-child(2) {top: 0; left: 0;}
-    .calendar-days div span:nth-child(4) {bottom: 0; right: 0;}
-    .calendar-days div:hover span:nth-child(2) {transition-delay: 0.1s;}
-    .calendar-days div:hover span:nth-child(3) {transition-delay: 0.2s;}
-    .calendar-days div:hover span:nth-child(4) {transition-delay: 0.4s;}
-
-    /*Today*/
-    .calendar-days div.curr-date,
-    .calendar-days div.curr-date:hover {font-weight: bolder; background-color: rgba(210, 105, 30); border-radius: 50%;}
-    .calendar-days div.curr-date span {display: none;}
-
-    /*Month*/
-    .month-picker {border-radius: 10px; cursor: pointer; font-weight: bold; transition: all .2s;}
-    .month-picker:hover {opacity: 0.5;}
-
-    /*Year >*/
-    .year-picker {display: flex; align-items: center;}
-    .year-change {border-radius: 50%; padding: 1rem; display: grid; place-items: center; cursor: pointer; font-weight: bold; transition: all .2s;}
-    .year-change:hover {opacity: 0.5;}
-
-    /*Show month list*/
-    .x{position: relative; display: flex; top: -10rem; justify-content: center;}
-    .month-list {position: absolute; width: max-content; height: max-content; background-color: rgba(0, 0, 0, 0.7); font-weight: bolder; padding: 1.5rem; grid-template-columns: repeat(3, auto); display: grid; transform: scale(1.5); visibility: hidden; pointer-events: none; border-radius: 10px;}
-    .month-list.show {transform: scale(1); visibility: visible; pointer-events: visible; transition: all 0.2s ease-in-out;}
-    .month-list > div {display: grid; place-items: center;}
-    .month-list > div > div {width: 100%; padding: 5px 20px; border-radius: 10px; text-align: center; cursor: pointer; color: chocolate; transition: all .2s;}
-    .month-list > div > div:hover {color: rgb(206, 189, 179);}
-
-    /*Information*/
-    .p-information{height: max-content; width: max-content; margin: auto; z-index: 50;}
-    .p-allinfo{display: table;}
-    .information{background-color: rgba(206, 189, 179, 0.3); border-radius: 10px; padding: 0.1rem 0.5rem; margin: 0.5rem; border: solid 2px rgb(206, 189, 179); cursor: text;}
-    .submit{background-color: chocolate; border-radius: 10px; padding: 0.5rem 1rem; margin: 0.5rem; cursor: pointer; font-weight: bolder;}
-
-    @keyframes to-top {
-        0% {transform: translateY(100%); opacity: 0;}
-        100% {transform: translateY(0); opacity: 1;}
-    }
-
-    @media (max-width:1024px){
-      .booking{display: inline-block;}
-      .p-information{text-align: center;}
-      .p-allinfo{display: block;}
-      .information{display: table; width: 100%; margin: 1rem 0;}
-    }
-
-    @media (max-width:480px){
-      .p-allinfo{display: block;}
-      .information{display: table; width: 100%; margin: 1rem 0;}
-    }
+  @media (max-width:1024px){
+    .p-allinfo{display: block;}
+    .information{display: table; width: 100%; margin: 1rem 0;}
+  }
 
 /*Success page*/
 

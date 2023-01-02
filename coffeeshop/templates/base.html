@@ -30,27 +30,21 @@
         {% block navbar %}
             <header id="header">
                 <!--Logo-->
-                <a href="index"><div class="logo"></div></a>
+                <a href="/"><div class="logo"></div></a>
                 <!--Navbar-->
                 <nav id="nav">
                     <button aria-label="Open menu" aria-controls="menu" aria-haspopup="true" aria-expanded="false" id="mobile"><span id="hamburger"></span></button>
                     <div id="menu" role="menu" class="navbar">
-                        <a href="index">Home</a>
+                        <a href="/">Home</a>
                         <button class="dropdown">More <i class="fa fa-caret-down"></i>
                             <ul class="dropdown-content">
-                                <a href="contact">Contact</a></li>
-                                <a href="contact">Subscribe</a></li>
-                                <a href="menu">Menu</a></li>
+                                <a href="/contact">Contact</a></li>
+                                <a href="/contact">Subscribe</a></li>
+                                <a href="/menu">Menu</a></li>
                             </ul>
                         </button>
-                        <a href="reservation">Booking</a>
+                        <a href="/booking">Booking</a>
                         <a href="#about">About</a>
-                        <div class="drop">
-                            <a href="contact">Contact</a>
-                            <a href="contact">Subscribe</a>
-                            <a href="menu">Menu</a>
-                            
-                        </div>               
                     </div>
                 </nav>
             </header>
@@ -63,6 +57,12 @@
         {% endblock %}
 
         {% block about %}
+        {% endblock %}
+
+        {% block menu %}
+        {% endblock %}
+
+        {% block booking %}
         {% endblock %}
 
         {% block footer %}
