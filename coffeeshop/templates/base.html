@@ -9,7 +9,7 @@
         {% endblock %}
 
         {% block corecss %}
-            <link rel="stylesheet" href="{% static 'css/base.css' %}">
+            <link rel="stylesheet" href="{% static 'css/style.css' %}">
             <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         {% endblock %}
 
@@ -56,34 +56,52 @@
             </header>
         {% endblock %}
 
+        {% block coffee_background %}
+        {% endblock %}
+
+        {% block imgs %}
+        {% endblock %}
+
+        {% block about %}
+        {% endblock %}
+
         {% block footer %}
-            <div class="Footer">
-                <div class="p-info">Information
-                    <a href="#">About us</a>
-                    <a href="#">Subscribe</a>
-                    <a href="#">Members</a>
-                    <a href="#">Services</a>
-                </div>
-            
-                <div class="p-info">Helpful Links
-                    <a href="#">Services</a>
-                    <a href="#">Help</a>
-                    <a href="#">Terms & Condition</a>
-                    <a href="#">Privacy Policy</a>
-                </div>
-            
-                <div class="p-info">Partnership
-                    <a href="#">Websites</a>
-                    <a href="#">Social Media</a>
-                    <a href="#">Branding</a>
-                </div>
-            
-                <div class="p-info-font">
-                    <a href="#"><i class="fas fa-envelope"></i> CoffeShop@mysite.com</a>
+        <div class="footer">
+            <div class="grid-footer">
+                <ul>Opening Hours
+                    <hr style="display: block; margin-before: 0.5em; margin-after: 0.5em; width: 2.5rem; overflow: hidden; border-style: solid; border-width: 1px; margin-top: 1rem;">
+                    <li><p>Monday - Friday</p><p>7am - 2pm</p></li>
+                    <li><p>Saturday</p><p>10am - 2pm</p></li>
+                    <li><p>Sunday</p><p>Closed</p></li>
+                </ul>
+
+                <div class="p-info-font">Stay In Touch
+                    <hr style="display: block; margin-before: 0.5em; margin-after: 0.5em; width: 2.5rem; overflow: hidden; border-style: solid; border-width: 1px; margin-top: 1rem;">
+                    <a href="#" style="line-height: normal; margin-top: 1rem;"><i class="fas fa-map-marker-alt" style="margin: 0;"></i><br>Somewhere in Europe<br>Dublin<br>Ireland</a>
+                    <a href="#"><i class="fas fa-envelope"></i>CoffeShop@mysite.com</a>
                     <a href="#"><i class="fas fa-phone-volume"></i>Tel: (353) 0011-2233</a>
-                    <a href="#"><i class="fas fa-map-marker-alt"></i>Address: Somewhere - Dublin - Ireland</a>
+                </div>
+
+                <div class="post">Recent Posts
+                    <ul>
+                        <div class="img-new style-new"></div>
+                        <li><h1>New grain selection!</h1><p>A new selection of beans has been added to our coffee.</p></li>
+                    </ul>
+
+                    <ul>
+                        <div class="img-new0 style-new"></div>
+                        <li><h1>Summer Flavors!</h1><p>Try this new sensation of summer, super refreshing!</p></li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="social-footer">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+        </div>
         {% endblock %}
 
     </body>
