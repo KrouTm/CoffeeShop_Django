@@ -1,4 +1,4 @@
-<p align="center"><img src="static/Pictures/logo.png" height="120px" width="120px"></p>
+<p align="center"><img src="{% media 'logo.png' %}" height="120px" width="120px"></p>
 
 **<p align="center">For lovers of all types of coffee</p>**
 
