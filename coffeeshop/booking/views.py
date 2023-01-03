@@ -24,12 +24,21 @@ def booking(request):
             'nperson': nperson,
             'comments': comments
         }
-        message = '''
-        New message: {}
+        message = f'''
+        You’re going fishing! View booking details within
 
-        From: {}
-        '''.format(data['comments'], data['email'])
-        send_mail(data['nperson'], comments, '', ['c0e5a668ec9fc5'])
+        Date: {data['date']}
+        Time: {data['time']}
+        Name: {data['name']}
+        Last Name: {data['lastname']}
+        E-mail: {data['email']}
+        Phone: {data['phone']}
+        Guests: {data['nperson']}
+        Comments: {data['comments']}
+        '''
+        send_mail(data['date'], message, '', ['c0e5a668ec9fc5'])
+
+
 
         return redirect('booking_success')
     else:
