@@ -42,7 +42,7 @@
 
 1. [Google Fonts](https://fonts.google.com/)
     - Google fonts were used to import the 'Bodoni Moda' and 'Bebas Neue' fonts into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome](https://fontawesome.com/)
+1. [Line Awesome](https://icons8.com/line-awesome)
     - I used the icons for decoration and social media links
 1. [Github](https://github.com/)
     - Github was used to create and store the project repository.
@@ -54,8 +54,6 @@
     - Was used to test the codes for sending data to emails.
 1. [BlueTree](https://bluetree.ai/screenfly/)
     - I used BlueTree to test the responsiveness and functionality of my website.
-1. [PostgreSQL](https://www.postgresql.org/)
-    - Open source object-relational database.
 1. [Heroku](https://signup.heroku.com/)
     - Heroku was used to deploy the website.
 1. [Git](https://git-scm.com/)
@@ -64,7 +62,7 @@
     - Gunicorn was used for deploying the project to Heroku.
 1. [Unsplash](https://unsplash.com/)
     - All the pictures that I used on the website.
-1. [Flask](https://flask.palletsprojects.com/en/2.1.x/)
+1. [Django](https://flask.palletsprojects.com/en/2.1.x/)
     - To connect Python with Postgre.
 1. [Coolors](https://coolors.co/)
     - To get the website colors.
