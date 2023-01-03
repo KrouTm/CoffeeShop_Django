@@ -176,8 +176,8 @@ html{scroll-behavior: smooth;}
   .send{position: relative; font-family: 'Bebas Neue', cursive; color: chocolate; font-size: 1.5rem; display: flex; justify-content: center; padding: 2rem; text-align: center;}
 
   /*Booking*/
-  .booking{position: relative; display: flex; text-align: center; margin: auto; width: 100%; justify-content: center; margin-bottom: 3rem;}
-  .p-allinfo{display: table; margin: auto;}
+  .booking{position: relative; display: flex; text-align: center; margin: auto; justify-content: center; margin-bottom: 3rem;}
+  .p-allinfo{display: table; margin: auto; width: max-content;}
   .information{background-color: rgba(206, 189, 179, 0.3); border-radius: 10px; padding: 0.1rem 0.5rem; margin: 0.5rem; border: solid 2px rgb(206, 189, 179); cursor: text;}
   .submit{background-color: chocolate; border-radius: 10px; padding: 0.5rem 1rem; margin: 0.5rem; cursor: pointer; font-weight: bolder;}
 

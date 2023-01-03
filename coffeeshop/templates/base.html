@@ -19,12 +19,8 @@
                 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
             </style>
         {% endblock %}
-
-        {% block js %}
-            <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-        {% endblock %}
         
-        <title>Spa {% block title %}{% endblock %}</title>
+        <title>{% block title %}Spa{% endblock %}</title>
     </head>
     <body>
         {% block navbar %}
@@ -44,25 +40,13 @@
                             </ul>
                         </button>
                         <a href="/booking">Booking</a>
-                        <a href="#about">About</a>
+                        <a href="/#about">About</a>
                     </div>
                 </nav>
             </header>
         {% endblock %}
 
-        {% block coffee_background %}
-        {% endblock %}
-
-        {% block imgs %}
-        {% endblock %}
-
-        {% block about %}
-        {% endblock %}
-
-        {% block menu %}
-        {% endblock %}
-
-        {% block booking %}
+        {% block context %}
         {% endblock %}
 
         {% block footer %}
@@ -96,10 +80,10 @@
             </div>
 
             <div class="social-footer">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+                <a href="#"><i class="lab la-facebook-f"></i></a>
+                <a href="#"><i class="lab la-instagram"></i></a>
+                <a href="#"><i class="lab la-twitter"></i></a>
+                <a href="#"><i class="lab la-telegram"></i></a>
             </div>
         </div>
         {% endblock %}
