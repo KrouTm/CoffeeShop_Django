@@ -32,18 +32,24 @@
                     <button aria-label="Open menu" aria-controls="menu" aria-haspopup="true" aria-expanded="false" id="mobile"><span id="hamburger"></span></button>
                     <div id="menu" role="menu" class="navbar">
                         <a href="/">Home</a>
-                        <button class="dropdown">More <i class="fa fa-caret-down"></i>
+                        <button class="dropdown">More <i class="las la-angle-down"></i></i>
                             <ul class="dropdown-content">
-                                <a href="/contact">Contact</a></li>
-                                <a href="/contact">Subscribe</a></li>
-                                <a href="/menu">Menu</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                                <li><a href="/contact">Subscribe</a></li>
+                                <li><a href="/menu">Menu</a></li>
                             </ul>
                         </button>
-                        <a href="/booking">Booking</a>
+                        <a href="/booking">Reservation</a>
                         <a href="/#about">About</a>
+                        <div class="drop">
+                            <a href="/contact">Contact</a>
+                            <a href="/contact">Subscribe</a>
+                            <a href="/menu">Menu</a>
+                        </div>               
                     </div>
                 </nav>
             </header>
+
         {% endblock %}
 
         {% block context %}
@@ -87,6 +93,11 @@
             </div>
         </div>
         {% endblock %}
+
+
+    {% block js %}
+        <script src="{% static 'js/script.js' %}"></script>
+    {% endblock %}
 
     </body>
 </html>
