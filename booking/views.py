@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.core.mail import send_mail
+from .models import Booking
 
 def booking(request):
     if request.method == 'POST':
@@ -13,6 +14,18 @@ def booking(request):
         phone = request.POST.get('phone')
         nperson = request.POST.get('nperson')
         comments = request.POST.get('comments')
+
+        booking = Booking(
+            date=date,
+            time=time,
+            name=name,
+            lastname=lastname,
+            email=email,
+            phone=phone,
+            nperson=nperson,
+            comments=comments
+        )
+        booking.save()
 
         data = {
             'date': date,

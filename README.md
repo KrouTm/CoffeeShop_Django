@@ -54,13 +54,17 @@
     - Was used to test the codes for sending data to emails.
 1. [BlueTree](https://bluetree.ai/screenfly/)
     - I used BlueTree to test the responsiveness and functionality of my website.
+1. [PostgreSQL](https://www.postgresql.org/)
+    - Open source object-relational database.
+1. [Heroku](https://signup.heroku.com/)
+    - Heroku was used to deploy the website.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to Heroku. 
 1. [Gunicorn](https://gunicorn.org/)
     - Gunicorn was used for deploying the project to Heroku.
 1. [Unsplash](https://unsplash.com/)
     - All the pictures that I used on the website.
-1. [Django](https://flask.palletsprojects.com/en/2.1.x/)
+1. [Django](https://www.djangoproject.com/download/)
     - To connect Python with Postgre.
 1. [Coolors](https://coolors.co/)
     - To get the website colors.
