@@ -1,1 +1,1 @@
-web: gunicorn myapp:app
+web: gunicorn coffeshop---django:app
