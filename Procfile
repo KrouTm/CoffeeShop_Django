@@ -1,1 +1,1 @@
-web: gunicorn manage.wsgi
+web: gunicorn CoffeeShop_Django.wsgi
