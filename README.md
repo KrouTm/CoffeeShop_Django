@@ -54,8 +54,6 @@
     - Was used to test the codes for sending data to emails.
 1. [BlueTree](https://bluetree.ai/screenfly/)
     - I used BlueTree to test the responsiveness and functionality of my website.
-1. [Heroku](https://signup.heroku.com/)
-    - Heroku was used to deploy the website.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to Heroku. 
 1. [Gunicorn](https://gunicorn.org/)
