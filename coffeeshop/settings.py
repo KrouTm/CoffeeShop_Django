@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-yb6&e@f(t5gs)u-^%0&m36646wp%79+&36^t$%nrnth*q3hp3o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://coffeeshop---django.herokuapp.com/','https://git.heroku.com/coffeeshop---django.git']
+ALLOWED_HOSTS = ['https://coffeeshop---django.herokuapp.com/']
 CSRF_TRUSTED_ORIGINS = ['https://kroutm-upgraded-journey-gwp96pwgjq4fvqrr-8000.preview.app.github.dev','http://127.0.0.1'] # Precisa disso para autorizar
 
 # Application definition
