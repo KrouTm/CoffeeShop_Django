@@ -2,7 +2,7 @@
 
 **<p align="center">For lovers of all types of coffee</p>**
 
-[View the live project here.](https://coffee---shop.herokuapp.com/)
+[View the live project here.](https://coffeeshop---django.herokuapp.com/)
 <p align="center"><img src="screenshots/Responsive/FireShot Capture 018 - Am I Responsive_ - ui.dev.png"></p>
 
 ## User Experience (UX)
